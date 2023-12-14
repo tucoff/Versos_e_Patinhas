@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "VersosEPatinhas": {
+    "vp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/versos-epatinhas",
+            "outputPath": "dist/vp",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -62,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "VersosEPatinhas:build:production"
+              "buildTarget": "vp:build:production"
             },
             "development": {
-              "buildTarget": "VersosEPatinhas:build:development"
+              "buildTarget": "vp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -73,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "VersosEPatinhas:build"
+            "buildTarget": "vp:build"
           }
         },
         "test": {
